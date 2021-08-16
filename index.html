@@ -1,40 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Rumah Makan Khas Sunda</title>
+    <title>Dine Out - Restaurant</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo-asli.png">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
+    <!-- page loader start -->
+    <div class="page-loader"></div>
+    <!-- end page loader start -->
 
-    <!-- Header -->
+    <!-- header -->
     <div class="header">
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="logo">
-                    <a href="#"><img src="img/logo.PNG" alt="logo"></a>
+                    <img src="img/logo2.png" alt="">
                 </div>
                 <button type="button" class="nav-toggler">
                     <span></span>
                 </button>
                 <div class="nav">
                     <ul>
-                        <li class="nav-item"><a href="#beranda">beranda</a></li>
-                        <li class="nav-item"><a href="#tentang">tentang kami</a></li>
-                        <li class="nav-item"><a href="#menu">menu kami</a></li>
-                        <li class="nav-item"><a href="#testimoni">testimoni</a></li>
-                        <li class="nav-item"><a href="#tim">tim kami</a></li>
-                        <li class="nav-item"><a href="footer">kontak kami</a></li>
+                        <!-- li.nav-item*6>a -->
+                        <li class="nav-item"><a href="#home">home</a></li>
+                        <li class="nav-item"><a href="#about">tentang kami</a></li>
+                        <li class="nav-item"><a href="#our-menu">menu kami</a></li>
+                        <li class="nav-item"><a href="#testimonials">testimonial</a></li>
+                        <li class="nav-item"><a href="#team">tim</a></li>
+                        <li class="nav-item"><a href="#footer">kontak kami</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Header -->
+    <!-- header end -->
 
 
+
+    <!-- home section start -->
+    <section class="home-section" id="home">
+        <div class="home-bg"></div>
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+                <div class="home-text" data-aos="fade-up" data-aos-duration="1000">
+                    <h1>Selamat Datang di Dapur Haroem</h1>
+                    <!-- <h1>Warteg Bahari</h1> -->
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, nobis id? Fugit quod tenetur sapiente quia dolore et.</p>
+                    <a href="#our-menu" class="btn btn-default">menu kami</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end home section start -->
+
+
+
+
+
+    <!-- about section start -->
+    <section class="about-section sec-padding" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-title="sejarah kami" data-aos="fade-up" data-aos-duration="1000">tentang kami</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="about-text" data-aos="fade-right" data-aos-duration="1000">
+                    <h3>selamat datang di dapur haroem</h3>
+                    <!-- <h3>selamat datang di warteg</h3> -->
+                    <!-- <h3>Selamat Datang Di Warteg Bahari</h3> -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maxime molestiae porro unde nisi fugit quam accusamus tenetur a incidunt, odit illo ad maiores eos ipsa? Quae eveniet nostrum blanditiis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maxime molestiae porro unde nisi fugit quam accusamus tenetur a incidunt, odit illo ad maiores eos ipsa? Quae eveniet nostrum blanditiis?</p>                    
+                    <a href="#our-menu" class="btn btn-default">cek menu</a>
+                </div>
+                <div class="about-img" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="img-box">
+                        <h3>Dapur Haroem Juara</h3>
+                        <img src="img/about-imgg.jpg" alt="about img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about section start -->
+
+
+
+
+
+    <!-- menu section start-->
+    <!-- section.menu-section.sec-padding#our-menu -->
+    <section class="menu-section sec-padding" id="our-menu">
+        <div class="container">
+            <!-- title and navbar -->
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-title="pesan menu" data-aos="fade-up" data-aos-duration="1000">menu kami</h2>
+                </div>
+            </div>    
+            <div class="row">
+                <div class="menu-tabs" data-aos="fade-up" data-aos-duration="1000">
+                    <button type="button" class="menu-tab-item active" data-target="#makanan">makanan</button>
+                    <button type="button" class="menu-tab-item" data-target="#minuman">minuman</button>
+                </div>
+            </div> 
+            <!-- end title and navbar -->
+
+            <!-- content our menu -->
+            <div class="row menu-tab-content active" id="makanan">
+                <div class="menu-item" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="menu-item-title">
+                        <img src="img/menu/1.jpg" alt="manu item thumbnail">
+                        <h3>soto ayam</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        50K
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="menu-item-title">
+                        <img src="img/menu/2.jpg" alt="manu item thumbnail">
+                        <h3>nasi goreng</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        25K
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="menu-item-title">
+                        <img src="img/menu/3.jpg" alt="manu item thumbnail">
+                        <h3>mpek mpek</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        35K
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="menu-item-title">
+                        <img src="img/menu/4.jpg" alt="manu item thumbnail">
+                        <h3>mie goreng</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        20K
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="menu-item-title">
+                        <img src="img/menu/5.jpg" alt="manu item thumbnail">
+                        <h3>kwetiau</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        25K
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="menu-item-title">
+                        <img src="img/menu/6.jpg" alt="manu item thumbnail">
+                        <h3>Mie Rebus</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        20K
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="menu-item-title">
+                        <img src="img/menu/7.jpg" alt="manu item thumbnail">
+                        <h3>seblak</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        30K
+                    </div>
+                </div>
+            </div>
+
+            <div class="row menu-tab-content" id="minuman">
+                <div class="menu-item" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="menu-item-title">
+                        <img src="/img/menu/12.jpg" alt="menu item thumbnail">
+                        <h3>kopi</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        20k
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="menu-item-title">
+                        <img src="/img/menu/11.jpg" alt="menu item thumbnail">
+                        <h3>air mineral</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        5K
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="menu-item-title">
+                        <img src="/img/menu/10.jpg" alt="menu item thumbnail">
+                        <h3>jahe merah</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        20K
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="menu-item-title">
+                        <img src="/img/menu/9.jpg" alt="menu item thumbnail">
+                        <h3>teh manis dingin / panas</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        15K
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="menu-item-title">
+                        <img src="/img/menu/8.jpg" alt="menu item thumbnail">
+                        <h3>Es Jeruk / Panas</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        20K
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end menu section start-->
+
+
+
+
+
+    <!-- testimonials section start -->
+    <section class="testimonials-section sec-padding" id="testimonials">    
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-title="testimonial" data-aos="fade-up" data-aos-duration="1000">feedback pelanggan</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="testi-item" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="testi-author">
+                        <div class="testi-author-name">
+                            <h3>Soni Hidayatulloh</h3>
+                            <span>food specialist</span>
+                        </div>
+                        <div class="testi-author-img">
+                            <img src="img/testimonials/4.JPG" alt="testi author img">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptates ut voluptate earum praesentium qui laudantium modi adipisci.</p>
+                    <div class="ratings">
+                        <!-- i.fas.fa-star*5 -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testi-item" data-aos="zoom-in-down" data-aos-duration="1000">
+                    <div class="testi-author">
+                        <div class="testi-author-name">
+                            <h3>Nunung</h3>
+                            <span>food specialist</span>
+                        </div>
+                        <div class="testi-author-img">
+                            <img src="img/testimonials/2.jpg" alt="testi author img">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptates ut voluptate earum praesentium qui laudantium modi adipisci.</p>
+                    <div class="ratings">
+                        <!-- i.fas.fa-star*5 -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testi-item" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="testi-author">
+                        <div class="testi-author-name">
+                            <h3>Joko</h3>
+                            <span>food specialist</span>
+                        </div>
+                        <div class="testi-author-img">
+                            <img src="img/testimonials/3.jpg" alt="testi author img">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptates ut voluptate earum praesentium qui laudantium modi adipisci.</p>
+                    <div class="ratings">
+                        <!-- i.fas.fa-star*5 -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end testimonials section start -->
+
+
+
+
+
+    <!-- team section start -->
+    <section class="team-section sec-padding" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-title="team" data-aos="fade-up" data-aos-duration="1000">our chefs</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="img/team/1.jpg" alt="team item">
+                    <div class="team-item-info">
+                        <h2>Ineu Shintia</h2>
+                        <p>Head Chef</p>
+                    </div>
+                </div>
+                <div class="team-item" data-aos="flip-right" data-aos-duration="1000">
+                    <img src="img/team/Soni.jpg" alt="team item">
+                    <div class="team-item-info">
+                        <h2>Soni Hidayatulloh</h2>
+                        <p>Chef Satu</p>
+                    </div>
+                </div>
+                <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="img/team/3.jpg" alt="team item">
+                    <div class="team-item-info">
+                        <h2>Lala Laeasari</h2>
+                        <p>Head Tiga</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section start -->
+
+
+
+
+
+    <!-- footer start -->
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-item">
+                    <h3>lokasi kami</h3>
+                    <p>(samping sawangan park mall) <br>JL. raya parung ciputat km 31. bojongsari depok</p>
+                </div>
+                <div class="footer-item">
+                    <h3>buka jam</h3>
+                    <p>setiap hari <br>11:00 - 21:00 WIB</p>
+                </div>
+                <div class="footer-item">
+                    <h3>kontak kami</h3>
+                    <p>+62 815 1143 6862 </p>
+                    <p>dapurhareom@gmail.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="copyright">
+                    &copy; 2021 - Desaign by Soni Hidayatulloh
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer  -->
+
+<script src="js/aos.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
